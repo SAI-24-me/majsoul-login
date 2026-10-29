@@ -65,8 +65,17 @@ for i in range(acccounts):
         .move_to_element_with_offset(screen, 350, 60)\
         .click()\
         .perform()
+    sleep(80)  # loading...
+
+    #4.ckcik center
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 200, 60)\
+        .click()\
+        .perform()
     print(f'Account {i+1} entering game...')
-    sleep(20)  # loading...
+    sleep(80)  # loading...
+    
     print(f'Account {i+1} login completed')
+    print(f'Account completed')
 
     driver.quit()
