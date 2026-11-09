@@ -66,14 +66,22 @@ for i in range(acccounts):
         .click()\
         .perform()
     sleep(80)  # loading...
-
-    #4.ckcik center
+    
+    #5.ckcik center (点击月卡签到按钮)
     ActionChains(driver)\
         .move_to_element_with_offset(screen, 200, 60)\
         .click()\
         .perform()
+    
+    #5.click sign-in center (点击活动签到按钮)
+    ActionChains(driver)\
+        .move_to_element_with_offset(screen, 0, 295)\
+        .click()\
+        .perform()
+    sleep(40)  # loading...
+    
     print(f'Account {i+1} entering game...')
-    sleep(80)  # loading...
+    sleep(40)  # loading...
     
     print(f'Account {i+1} login completed')
     print(f'Account completed')
