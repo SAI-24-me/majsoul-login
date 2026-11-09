@@ -72,6 +72,7 @@ for i in range(acccounts):
         .move_to_element_with_offset(screen, 200, 60)\
         .click()\
         .perform()
+    sleep(40)  # loading...
     
     #5.click sign-in center (点击活动签到按钮)
     ActionChains(driver)\
@@ -81,7 +82,7 @@ for i in range(acccounts):
     sleep(40)  # loading...
     
     print(f'Account {i+1} entering game...')
-    sleep(40)  # loading...
+    sleep(10)  # loading...
     
     print(f'Account {i+1} login completed')
     print(f'Account completed')
